@@ -12,8 +12,8 @@ var AndroidContacts = {
       {string} notes - The contact notes.
       
     @example
-    AndroidContacts.create(  entry().field("Full name") , 
-      {email:entry().field("Email"), notes:"from Memento"});
+    AndroidContacts.create(entry().field("Full name"), {email:entry().field("Email"), notes:"from Memento"});
+    
     */
     create: function(name, options) {
         i = intent("android.intent.action.INSERT");
